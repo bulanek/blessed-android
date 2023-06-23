@@ -94,13 +94,13 @@ public class BluetoothPeripheral {
     private static final int DIRECT_CONNECTION_DELAY_IN_MS = 100;
 
     // Timeout to use if no callback on onConnectionStateChange happens
-    private static final int CONNECTION_TIMEOUT_IN_MS = 35000;
+    private static final int CONNECTION_TIMEOUT_IN_MS = 70000;
 
     // Samsung phones time out after 5 seconds while most other phone time out after 30 seconds
-    private static final int TIMEOUT_THRESHOLD_SAMSUNG = 4500;
+    private static final int TIMEOUT_THRESHOLD_SAMSUNG = 70000;
 
     // Most other phone time out after 30 seconds
-    private static final int TIMEOUT_THRESHOLD_DEFAULT = 25000;
+    private static final int TIMEOUT_THRESHOLD_DEFAULT = 70000;
 
     // When a bond is lost, the bluetooth stack needs some time to update its internal state
     private static final long DELAY_AFTER_BOND_LOST = 1000L;
