@@ -137,7 +137,7 @@ public class BluetoothPeripheral {
     private @NotNull byte[] currentWriteBytes = new byte[0];
     private int currentCommand = IDLE;
     private @NotNull final Set<BluetoothGattCharacteristic> notifyingCharacteristics = new HashSet<>();
-    private @NotNull  Handler mainHandler = new Handler(Looper.myLooper());
+    private @NotNull  Handler mainHandler = new Handler(Looper.getMainLooper());
     private @Nullable Runnable timeoutRunnable;
     private @Nullable Runnable discoverServicesRunnable;
 
